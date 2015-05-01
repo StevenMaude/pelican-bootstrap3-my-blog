@@ -223,3 +223,7 @@ figure.floatcenter, .align-center {
         font-size: 16px;
     }
 }
+
+.footnote {
+    font-size: 90%;
+}
