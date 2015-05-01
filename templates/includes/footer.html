@@ -8,6 +8,12 @@
             {% set copy_date = '' %}
          {% endif %}
          <div class="col-xs-10">&copy; {{ copy_date }} {{ AUTHOR }}
+            {# Based on SOCIAL in templates/includes/sidebar.html #}
+            {% for name, link in FOOTER_SOCIAL %}
+                {% set name_sanitized = name|lower|replace('+','-plus')|replace(' ','-') %}
+                {% set iconattributes = 'fa fa-' ~ name_sanitized %}
+            <a href="{{ link }}"><i class="{{ iconattributes }}"></i></a></li>
+            {% endfor %}
             &middot; Powered by
             <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>. Theme is a modified
             <a href="https://github.com/StevenMaude/pelican-bootstrap3-my-blog" target="_blank">pelican-bootstrap3</a>.
