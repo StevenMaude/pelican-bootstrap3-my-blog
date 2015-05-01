@@ -1,6 +1,8 @@
+/* Commented out: switched navbar from navbar-fixed to navbar-static.
 body {
     padding-top: 70px;
 }
+*/
 
 #sidebar .list-group, #sidebar .list-group-item {
     background-color: transparent;
