@@ -18,7 +18,7 @@
                 <p>
                     <tr valign="top">
                         <td>
-                            <span class="categories-timestamp"><time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time></span>
+                            <span class="categories-timestamp archive-date"><time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time></span>
                         </td>
                         <td>
                             <a class="article-link" href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}{% if article.subtitle %} - {{ article.subtitle }}{% endif %}</a>

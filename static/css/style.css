@@ -231,3 +231,7 @@ figure.floatcenter, .align-center {
 a.article-link:visited {
     color: #aaa;
 }
+
+.archive-date {
+    white-space: nowrap;
+}
