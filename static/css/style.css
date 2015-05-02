@@ -227,3 +227,7 @@ figure.floatcenter, .align-center {
 .footnote {
     font-size: 90%;
 }
+
+a.article-link:visited {
+    color: #aaa;
+}
