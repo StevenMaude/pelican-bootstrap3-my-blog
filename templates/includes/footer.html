@@ -14,8 +14,8 @@
                 {% set iconattributes = 'fa fa-' ~ name_sanitized %}
             <a href="{{ link }}"><i class="{{ iconattributes }}"></i></a></li>
             {% endfor %}
-            &middot; Powered by
-            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>. Theme is a modified
+            &middot; Built with
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a> and custom
             <a href="https://github.com/StevenMaude/pelican-bootstrap3-my-blog" target="_blank">pelican-bootstrap3</a>.
             {%- if CC_LICENSE or CC_LICENSE_DERIVATIVES or CC_LICENSE_COMMERCIAL %}
               {% from 'includes/cc-license.html' import cc_license_mark %}
@@ -24,7 +24,7 @@
               <p><small>{{ CUSTOM_LICENSE }}</small></p>
             {% endif %}
          </div>
-         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Top</a></p></div>
       </div>
    </div>
 </footer>
