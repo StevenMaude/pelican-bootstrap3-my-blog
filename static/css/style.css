@@ -236,3 +236,9 @@ a.article-link:visited {
 .archive-date {
     white-space: nowrap;
 }
+
+/* Add scroll bars to code snippets */
+.highlight pre {
+    word-wrap: normal;
+    white-space: pre;
+}
