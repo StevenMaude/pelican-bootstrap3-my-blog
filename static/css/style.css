@@ -246,7 +246,8 @@ a.article-link:visited {
     margin-bottom: 16px;
 }
 
-.article-figure img, .article-image {
+.article-figure img,
+.article-image {
     display: block;
     margin-left: auto;
     margin-right: auto;
