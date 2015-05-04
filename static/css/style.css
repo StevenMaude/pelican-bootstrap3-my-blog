@@ -242,16 +242,16 @@ a.article-link:visited {
     white-space: pre;
 }
 
-figure.article-figure {
+.article-figure {
     margin-bottom: 16px;
 }
 
-figure.article-figure img {
+.article-figure img  {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-figure.article-figure figcaption {
+.article-figure figcaption {
     text-align: center;
 }
