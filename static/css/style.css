@@ -241,3 +241,17 @@ a.article-link:visited {
     word-wrap: normal;
     white-space: pre;
 }
+
+figure.article-figure {
+    margin-bottom: 16px;
+}
+
+figure.article-figure img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figure.article-figure figcaption {
+    text-align: center;
+}
