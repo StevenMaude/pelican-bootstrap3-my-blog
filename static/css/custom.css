@@ -1,0 +1,39 @@
+/* Override banner in style.css */
+#banner h1 {
+    font-stretch: none;
+    text-transform: none;
+}
+
+.footnote {
+    font-size: 90%;
+}
+
+a.article-link:visited {
+    color: #aaa;
+}
+
+/* Fix for Chromium wrapping the dates in archive list */
+.archive-date {
+    white-space: nowrap;
+}
+
+/* Add scroll bars to code snippets */
+.highlight pre {
+    word-wrap: normal;
+    white-space: pre;
+}
+
+.article-figure {
+    margin-bottom: 16px;
+}
+
+.article-figure img,
+.article-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.article-figure figcaption {
+    text-align: center;
+}

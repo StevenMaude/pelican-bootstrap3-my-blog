@@ -1,8 +1,6 @@
-/* Commented out: switched navbar from navbar-fixed to navbar-static.
 body {
     padding-top: 70px;
 }
-*/
 
 #sidebar .list-group, #sidebar .list-group-item {
     background-color: transparent;
@@ -198,9 +196,11 @@ figure.floatcenter, .align-center {
     color: #fff;
     font-family: "HelveticaNeue-CondensedBold","Helvetica Neue CE 600 Condensed","Helvetica Neue LT Condensed","Helvetica Neue 600 Condensed","HelveticaNeue-BoldCondensed","Helvetica Neue BoldCondensed","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 60px;
+    font-stretch: condensed;
     font-weight: 700;
     line-height: 0.9;
     margin: 0;
+    text-transform: uppercase;
 }
 #banner .intro {
     color: #fff;
@@ -220,39 +220,4 @@ figure.floatcenter, .align-center {
     #banner .intro{
         font-size: 16px;
     }
-}
-
-/* My customisations start here */
-.footnote {
-    font-size: 90%;
-}
-
-a.article-link:visited {
-    color: #aaa;
-}
-
-/* Fix for Chromium wrapping the dates in archive list */
-.archive-date {
-    white-space: nowrap;
-}
-
-/* Add scroll bars to code snippets */
-.highlight pre {
-    word-wrap: normal;
-    white-space: pre;
-}
-
-.article-figure {
-    margin-bottom: 16px;
-}
-
-.article-figure img,
-.article-image {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.article-figure figcaption {
-    text-align: center;
 }
