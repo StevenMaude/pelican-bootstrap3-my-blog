@@ -1,3 +1,8 @@
+/* Override body padding in style.css */
+body {
+    padding-top: 0;
+}
+
 /* Override banner in style.css */
 #banner h1 {
     font-stretch: normal;
