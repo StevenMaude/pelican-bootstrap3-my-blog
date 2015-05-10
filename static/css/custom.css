@@ -56,3 +56,8 @@ ol {
 .break-out-of-list {
     margin-left: -40px;
 }
+
+blockquote cite {
+    display: block;
+    text-align: right;
+}
