@@ -1,0 +1,124 @@
+/* Override body padding in style.css */
+body {
+    padding-top: 0;
+}
+
+/* Override banner in style.css */
+#banner h1 {
+    font-stretch: normal;
+    text-transform: none;
+    font-family: "Open Sans",Calibri,Candara,Arial,sans-serif;
+    font-size: 50px;
+}
+
+.footnote {
+    font-size: 90%;
+}
+
+a.article-link:visited {
+    color: #aaa;
+}
+
+/* Fix for Chromium wrapping the dates in archive list */
+.archive-date {
+    white-space: nowrap;
+}
+
+/* Add scroll bars to code snippets */
+.highlight pre {
+    word-wrap: normal;
+    white-space: pre;
+}
+
+.article-figure {
+    margin-bottom: 16px;
+}
+
+.article-figure img,
+.article-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.article-figure figcaption {
+    text-align: center;
+}
+
+/* Reset any browser padding on lists */
+ul,
+ol {
+    padding-left: 40px;
+    margin: 0;
+}
+
+/* So that we can then break out of a list e.g. to centre images on page */
+.break-out-of-list {
+    margin-left: -40px;
+}
+
+blockquote cite {
+    display: block;
+    text-align: right;
+}
+
+/* Match panel border colour to other lines */
+.entry-content .panel {
+    border-color: #E6E6E6;
+}
+
+/* Match article detail panel background colour to panels on article lists */
+article .panel {
+    background-color: #F5F5F5;
+}
+
+footer.post-info .label {
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+}
+
+/* Too much spacing between bottom hr and copyright details; remove some */
+.content-author-separator {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+/* Article paragraph spacing */
+.entry-content p {
+    margin-bottom: 1em;
+}
+
+/* Increase header spacing to correspond to base font size and paragraph spacing */
+.entry-content h1,
+.entry-content h2,
+.entry-content h3 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.entry-content h4,
+.entry-content h5,
+.entry-content h6 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Make highlighted code sections have paragraph spacing */
+.highlight pre {
+    margin-bottom: 1.176470588em;
+    font-size: 0.85em;
+}
+
+/* Make site name smaller in navbar; we know which site we're on from address bar */
+.navbar-brand {
+    font-size: 0.8em;
+}
+
+/* Removing underlines from table links, but keep on hover; nicer way of doing this? */
+table a:not(.btn){
+    text-decoration: none;
+}
+
+table a:not(.btn):hover {
+    text-decoration: underline;
+}

@@ -11,14 +11,21 @@
 
 {% block content %}
     <section id="content">
-        <h1>Archives for {{ SITENAME }}</h1>
+        <h1>Archives</h1>
         <div id="archives">
-            {% for article in dates %}
+            <table>
+                {% for article in dates %}
                 <p>
-                    <span class="categories-timestamp"><time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time></span>
-                    <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}{% if article.subtitle %} - {{ article.subtitle }}{% endif %}</a>
+                    <tr valign="top">
+                        <td>
+                            <span class="categories-timestamp archive-date"><time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time></span>
+                        </td>
+                        <td>
+                            <a class="article-link" href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}{% if article.subtitle %} - {{ article.subtitle }}{% endif %}</a>
+                        </td>
                 </p>
-            {% endfor %}
+                {% endfor %}
+            </table>
         </div>
     </section>
 {% endblock %}
