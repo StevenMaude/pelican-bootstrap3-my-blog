@@ -71,3 +71,9 @@ blockquote cite {
 article .panel {
     background-color: #F5F5F5;
 }
+
+/* Too much spacing between bottom hr and copyright details; remove some */
+.content-author-separator {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
