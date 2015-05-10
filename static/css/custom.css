@@ -2,6 +2,8 @@
 #banner h1 {
     font-stretch: normal;
     text-transform: none;
+    font-family: "Open Sans",Calibri,Candara,Arial,sans-serif;
+    font-size: 50px;
 }
 
 .footnote {
