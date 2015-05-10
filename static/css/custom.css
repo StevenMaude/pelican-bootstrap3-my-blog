@@ -113,3 +113,12 @@ footer.post-info .label {
 .navbar-brand {
     font-size: 0.8em;
 }
+
+/* Removing underlines from table links, but keep on hover; nicer way of doing this? */
+table a:not(.btn){
+    text-decoration: none;
+}
+
+table a:not(.btn):hover {
+    text-decoration: underline;
+}
