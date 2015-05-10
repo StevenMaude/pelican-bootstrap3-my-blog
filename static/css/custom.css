@@ -61,3 +61,13 @@ blockquote cite {
     display: block;
     text-align: right;
 }
+
+/* Match panel border colour to other lines */
+.entry-content .panel {
+    border-color: #E6E6E6;
+}
+
+/* Match article detail panel background colour to panels on article lists */
+article .panel {
+    background-color: #F5F5F5;
+}
