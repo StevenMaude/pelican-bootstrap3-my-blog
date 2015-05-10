@@ -82,3 +82,29 @@ footer.post-info .label {
     margin-top: 1em;
     margin-bottom: 0.5em;
 }
+
+/* Article paragraph spacing */
+.entry-content p {
+    margin-bottom: 1em;
+}
+
+/* Increase header spacing to correspond to base font size and paragraph spacing */
+.entry-content h1,
+.entry-content h2,
+.entry-content h3 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.entry-content h4,
+.entry-content h5,
+.entry-content h6 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Make highlighted code sections have paragraph spacing */
+.highlight pre {
+    margin-bottom: 1.176470588em;
+    font-size: 0.85em;
+}
