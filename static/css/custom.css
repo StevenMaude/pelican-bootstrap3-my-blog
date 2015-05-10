@@ -108,3 +108,8 @@ footer.post-info .label {
     margin-bottom: 1.176470588em;
     font-size: 0.85em;
 }
+
+/* Make site name smaller in navbar; we know which site we're on from address bar */
+.navbar-brand {
+    font-size: 0.8em;
+}
