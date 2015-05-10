@@ -1,6 +1,6 @@
 /* Override banner in style.css */
 #banner h1 {
-    font-stretch: none;
+    font-stretch: normal;
     text-transform: none;
 }
 
