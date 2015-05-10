@@ -44,3 +44,15 @@ a.article-link:visited {
 .article-figure figcaption {
     text-align: center;
 }
+
+/* Reset any browser padding on lists */
+ul,
+ol {
+    padding-left: 40px;
+    margin: 0;
+}
+
+/* So that we can then break out of a list e.g. to centre images on page */
+.break-out-of-list {
+    margin-left: -40px;
+}
