@@ -92,15 +92,15 @@ footer.post-info .label {
 .entry-content h1,
 .entry-content h2,
 .entry-content h3 {
-    margin-top: 40px;
-    margin-bottom: 20px;
+    margin-top: 44px;
+    margin-bottom: 22px;
 }
 
 .entry-content h4,
 .entry-content h5,
 .entry-content h6 {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 22px;
+    margin-bottom: 22px;
 }
 
 /* Make highlighted code sections have paragraph spacing */
