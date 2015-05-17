@@ -7,7 +7,7 @@ body {
 #banner h1 {
     font-stretch: normal;
     text-transform: none;
-    font-family: "Open Sans",Calibri,Candara,Arial,sans-serif;
+    font-family: "Source Sans Pro",Calibri,Candara,Arial,sans-serif;
     font-size: 50px;
 }
 
@@ -31,7 +31,7 @@ a.article-link:visited {
 }
 
 .article-figure {
-    margin-bottom: 16px;
+    margin-bottom: 1em;
 }
 
 .article-figure img,
@@ -92,15 +92,15 @@ footer.post-info .label {
 .entry-content h1,
 .entry-content h2,
 .entry-content h3 {
-    margin-top: 40px;
-    margin-bottom: 20px;
+    margin-top: 44px;
+    margin-bottom: 22px;
 }
 
 .entry-content h4,
 .entry-content h5,
 .entry-content h6 {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 22px;
+    margin-bottom: 22px;
 }
 
 /* Make highlighted code sections have paragraph spacing */
@@ -114,11 +114,58 @@ footer.post-info .label {
     font-size: 0.8em;
 }
 
-/* Removing underlines from table links, but keep on hover; nicer way of doing this? */
-table a:not(.btn){
+/* Use colour changes to indicate links, not underlines.
+   Underline looks bad when mixing code and normal text in links.
+   (Tags are OK underlined.)
+
+   Cover article tags in article details, article links in archives
+   on index pages, and in text. */
+
+footer.post-info a,
+footer.post-info a:visited,
+footer.post-info a:hover,
+footer:not(.post-info) a:focus {
+    color: #333;
+}
+
+table a:not(.btn),
+.article-link a,
+footer.post-info a:hover,
+footer.post-info a:focus {
     text-decoration: none;
 }
 
-table a:not(.btn):hover {
-    text-decoration: underline;
+table a:not(.btn):visited,
+table a:not(.btn):visited code,
+.article-link a:visited,
+.article-link a:visited code {
+    color: #777
+}
+
+table a:not(.btn):hover,
+table a:not(.btn):hover code,
+.article-link a:hover,
+.article-link a:hover code {
+    color: black;
+}
+
+.entry-content a,
+.entry-content a code {
+    color: #2780E3;
+    border-bottom: none;
+}
+
+.entry-content a:visited,
+.entry-content a:visited code {
+    color: #4C41B4;
+}
+
+.entry-content a:hover {
+    color: #165BA8;
+    border-bottom: none;
+}
+
+/* Fix uneven line spacing when lines contain code and normal text */
+code {
+    line-height: 1;
 }
