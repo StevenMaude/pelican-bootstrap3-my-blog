@@ -114,11 +114,53 @@ footer.post-info .label {
     font-size: 0.8em;
 }
 
-/* Removing underlines from table links, but keep on hover; nicer way of doing this? */
-table a:not(.btn){
+/* Use colour changes to indicate links, not underlines.
+   Underline looks bad when mixing code and normal text in links.
+   (Tags are OK underlined.)
+
+   Cover article tags in article details, article links in archives
+   on index pages, and in text. */
+
+footer.post-info a,
+footer.post-info a:visited,
+footer.post-info a:hover,
+footer:not(.post-info) a:focus {
+    color: #333;
+}
+
+table a:not(.btn),
+.article-link a,
+footer.post-info a:hover,
+footer.post-info a:focus {
     text-decoration: none;
 }
 
-table a:not(.btn):hover {
-    text-decoration: underline;
+table a:not(.btn):visited,
+table a:not(.btn):visited code,
+.article-link a:visited,
+.article-link a:visited code {
+    color: #777
+}
+
+table a:not(.btn):hover,
+table a:not(.btn):hover code,
+.article-link a:hover,
+.article-link a:hover code {
+    color: black;
+}
+
+.entry-content a,
+.entry-content a code {
+    color: #2780E3;
+    border-bottom: none;
+}
+
+.entry-content a:visited,
+.entry-content a:visited code {
+    color: #4C41B4;
+}
+
+.entry-content a:hover {
+    color: #165BA8;
+    border-bottom: none;
 }
