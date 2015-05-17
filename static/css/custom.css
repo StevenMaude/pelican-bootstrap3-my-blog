@@ -164,3 +164,8 @@ table a:not(.btn):hover code,
     color: #165BA8;
     border-bottom: none;
 }
+
+/* Fix uneven line spacing when lines contain code and normal text */
+code {
+    line-height: 1;
+}
