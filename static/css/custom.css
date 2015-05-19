@@ -84,7 +84,7 @@ footer.post-info .label {
 }
 
 /* Article paragraph spacing */
-.entry-content p {
+.entry-content p, ul, ol {
     margin-bottom: 1em;
 }
 
