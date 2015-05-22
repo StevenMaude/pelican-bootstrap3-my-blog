@@ -169,3 +169,7 @@ table a:not(.btn):hover code,
 code {
     line-height: 1;
 }
+
+.admonition.article-edit {
+    background-color: #FFF3FF;
+}
