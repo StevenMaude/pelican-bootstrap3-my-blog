@@ -15,10 +15,6 @@ body {
     font-size: 90%;
 }
 
-a.article-link:visited {
-    color: #aaa;
-}
-
 /* Fix for Chromium wrapping the dates in archive list */
 .archive-date {
     white-space: nowrap;
