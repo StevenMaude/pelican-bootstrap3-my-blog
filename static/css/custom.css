@@ -15,10 +15,6 @@ body {
     font-size: 90%;
 }
 
-a.article-link:visited {
-    color: #aaa;
-}
-
 /* Fix for Chromium wrapping the dates in archive list */
 .archive-date {
     white-space: nowrap;
@@ -120,19 +116,23 @@ footer.post-info .label {
 
    Cover article tags in article details, article links in archives
    on index pages, and in text. */
-
 footer.post-info a,
 footer.post-info a:visited,
 footer.post-info a:hover,
-footer:not(.post-info) a:focus {
-    color: #333;
+footer:not(.post-info) a:focus,
+.article-link a:focus {
+    color: inherit;
 }
 
 table a:not(.btn),
 .article-link a,
-footer.post-info a:hover,
-footer.post-info a:focus {
+footer.post-info a:focus,
+footer:not(.post-info) a:focus {
     text-decoration: none;
+}
+
+footer.post-info a:hover {
+    text-decoration: underline;
 }
 
 table a:not(.btn):visited,
