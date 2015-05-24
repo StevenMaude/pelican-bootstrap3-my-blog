@@ -131,7 +131,8 @@ footer:not(.post-info) a:focus {
     text-decoration: none;
 }
 
-footer.post-info a:hover {
+footer.post-info a:hover,
+footer:not(.post-info) a:hover {
     text-decoration: underline;
 }
 
