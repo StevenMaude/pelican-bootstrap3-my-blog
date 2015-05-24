@@ -105,8 +105,8 @@ footer.post-info .label {
 
 /* Make highlighted code sections have paragraph spacing */
 .highlight pre {
-    margin-bottom: 1.176470588em;
-    font-size: 0.85em;
+    margin-bottom: 1.294117647em;
+    font-size: 0.772727273em;
 }
 
 /* Make site name smaller in navbar; we know which site we're on from address bar */
