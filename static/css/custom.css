@@ -8,7 +8,12 @@ body {
     font-stretch: normal;
     text-transform: none;
     font-family: "Source Sans Pro",Calibri,Candara,Arial,sans-serif;
-    font-size: 50px;
+}
+
+@media (min-width: 600px) {
+    #banner h1 {
+        font-size: 50px;
+    }
 }
 
 .footnote {
@@ -84,25 +89,52 @@ footer.post-info .label {
     margin-bottom: 1em;
 }
 
-/* Increase header spacing to correspond to base font size and paragraph spacing */
-.entry-content h1,
-.entry-content h2,
-.entry-content h3 {
-    margin-top: 44px;
-    margin-bottom: 22px;
+/* Match header spacing to base font size and paragraph spacing */
+@media (min-width: 600px) {
+    .entry-content h1,
+    .entry-content h2,
+    .entry-content h3 {
+        margin-top: 44px;
+        margin-bottom: 22px;
+    }
+
+    .entry-content h4,
+    .entry-content h5,
+    .entry-content h6 {
+        margin-top: 22px;
+        margin-bottom: 22px;
+    }
 }
 
-.entry-content h4,
-.entry-content h5,
-.entry-content h6 {
-    margin-top: 22px;
-    margin-bottom: 22px;
+@media (max-width: 599px) {
+    .entry-content h1,
+    .entry-content h2,
+    .entry-content h3 {
+        margin-top: 34px;
+        margin-bottom: 17px;
+    }
+
+    .entry-content h4,
+    .entry-content h5,
+    .entry-content h6 {
+        margin-top: 17px;
+        margin-bottom: 17px;
+    }
 }
 
 /* Make highlighted code sections have paragraph spacing */
-.highlight pre {
-    margin-bottom: 1.294117647em;
-    font-size: 0.772727273em;
+@media (min-width: 600px) {
+    .highlight pre {
+        margin-bottom: 1.294117647em;
+        font-size: 0.772727273em;
+    }
+}
+
+@media (max-width: 599px) {
+    .highlight pre {
+        margin-bottom: 1.307692308em;
+        font-size: 0.764705882em;
+    }
 }
 
 /* Make site name smaller in navbar; we know which site we're on from address bar */
