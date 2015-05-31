@@ -89,19 +89,37 @@ footer.post-info .label {
     margin-bottom: 1em;
 }
 
-/* Increase header spacing to correspond to base font size and paragraph spacing */
-.entry-content h1,
-.entry-content h2,
-.entry-content h3 {
-    margin-top: 44px;
-    margin-bottom: 22px;
+/* Match header spacing to base font size and paragraph spacing */
+@media (min-width: 600px) {
+    .entry-content h1,
+    .entry-content h2,
+    .entry-content h3 {
+        margin-top: 44px;
+        margin-bottom: 22px;
+    }
+
+    .entry-content h4,
+    .entry-content h5,
+    .entry-content h6 {
+        margin-top: 22px;
+        margin-bottom: 22px;
+    }
 }
 
-.entry-content h4,
-.entry-content h5,
-.entry-content h6 {
-    margin-top: 22px;
-    margin-bottom: 22px;
+@media (max-width: 599px) {
+    .entry-content h1,
+    .entry-content h2,
+    .entry-content h3 {
+        margin-top: 34px;
+        margin-bottom: 17px;
+    }
+
+    .entry-content h4,
+    .entry-content h5,
+    .entry-content h6 {
+        margin-top: 17px;
+        margin-bottom: 17px;
+    }
 }
 
 /* Make highlighted code sections have paragraph spacing */
