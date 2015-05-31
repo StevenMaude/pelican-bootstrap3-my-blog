@@ -152,7 +152,8 @@ footer.post-info a,
 footer.post-info a:visited,
 footer.post-info a:hover,
 footer:not(.post-info) a:focus,
-.article-link a:focus {
+.article-link a:focus,
+.pager a:focus {
     color: inherit;
 }
 
